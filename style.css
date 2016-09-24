@@ -1,0 +1,617 @@
+/* http://meyerweb.com/eric/tools/css/reset/
+   v2.0 | 20110126
+   License: none (public domain) */
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+
+
+/* HTML5 display-role reset for older browsers */
+
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+    display: block;
+}
+
+body {
+    line-height: 1;
+}
+
+ol,
+ul {
+    list-style: none;
+}
+
+blockquote,
+q {
+    quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+    content: '';
+    content: none;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+.wraper {
+    flex-direction: column;
+    display: flex;
+    width: 100%;
+    height: auto;
+    background-image: url(fong.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+header {
+    /*    background-color: rgba(0, 0, 0, 0.7);*/
+    background-color: rgba(35, 40, 51, 0.7);
+    position: relative;
+    display: flex;
+    width: 100%;
+    height: 100vh;
+    flex-direction: column;
+    text-align: center;
+}
+
+nav {
+    display: flex;
+    width: 100%;
+    height: 8%;
+}
+
+ul {
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+}
+
+ul li {
+    position: relative;
+    border-radius: 7px;
+    padding: 10px;
+    margin: 10px;
+}
+
+ul li ul {
+    width: 200%;
+    background-color: rgba(35, 40, 51, 1);
+    color: white;
+    position: absolute;
+    display: none;
+    flex-direction: column;
+    top: 100%;
+    left: 0;
+    text-align: left;
+}
+
+ul li ul li:hover {
+    cursor: pointer;
+    transition: 0.5s;
+    color: rgba(240, 58, 94, 1);
+}
+
+ul li ul li:last-child {
+    background-color: rgba(35, 40, 51, 1);
+}
+
+ul li ul li {
+    padding: 1px;
+}
+
+ul li:hover ul {
+    display: flex;
+}
+
+a {
+    text-decoration: none;
+    font-size: 20px;
+    color: white;
+}
+
+ul li:last-child {
+    background-color: rgba(240, 58, 94, 1);
+    margin-right: 2%;
+}
+
+li a:hover {
+    transition: 0.5s;
+    color: rgba(240, 58, 94, 1);
+}
+
+li .last:hover {
+    color: white;
+    transition: 0.5s;
+}
+
+.center {
+    margin: 0 auto;
+    margin-top: 10%;
+    align-self: center;
+    opacity: 1;
+    width: 60%;
+}
+
+.center img {
+    float: right;
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+}
+
+.text {
+    color: white;
+    text-align: center;
+    padding: 10px;
+    float: left;
+    margin-top: 60px;
+}
+
+.text h1 {
+    padding-top: 20px;
+    font-size: 2.5em;
+    margin: 0px;
+}
+
+.text p {
+    font-size: 1.25em;
+    line-height: 1.75em;
+}
+
+.icon img {
+    width: 50px;
+    height: 50px;
+}
+
+.icon {
+    position: absolute;
+    top: 93%;
+    left: 50%;
+    opacity: 0.5
+}
+
+main {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    background-color: rgba(35, 40, 51, 0.7);
+}
+
+.photo img {
+    width: 100%;
+    height: 300px;
+}
+
+.photo {
+    border-bottom: 4px solid pink;
+}
+
+.text-photo {
+    padding-top: 50px;
+    display: flex;
+    width: 100%;
+    padding-top: 60px;
+    padding-bottom: 60px;
+}
+
+.content,
+.content1,
+.content2 {
+    text-align: justify;
+    width: 33%;
+    padding: 40px;
+}
+
+.text-photo h2 {
+    font-size: 2em;
+    line-height: 1.5em;
+    color: rgb(255, 255, 255);
+    font-weight: 300;
+}
+
+.text-photo p {
+    font-size: 1.25em;
+    line-height: 1.75em;
+    color: rgb(255, 255, 255);
+}
+
+.icon1 {
+    position: absolute;
+    top: 93.5%;
+    left: 50%;
+    opacity: 0.5
+}
+
+.icon1 img {
+    width: 50px;
+    height: 50px;
+}
+
+.icon2 {
+    position: absolute;
+    top: 93.5%;
+    left: 50%;
+    opacity: 0.5
+}
+
+.icon2 img {
+    width: 50px;
+    height: 50px;
+}
+
+.container {
+    position: relative;
+    display: flex;
+    height: 100vh;
+}
+
+.image {
+    width: 100%;
+    height: 100vh;
+    background-image: url(left.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.left,
+.container-text {
+    position: relative;
+    border-left: 10px solid rgba(34, 73, 230, 1);
+    ;
+    width: 40%;
+    height: 100vh;
+    background-color: rgba(35, 40, 51, 0.7);
+}
+
+.container-text {
+    float: right;
+    opacity: 0;
+}
+
+.image:hover .container-text {
+    transition: 0.5s;
+    opacity: 1;
+}
+
+footer,
+.left,
+.information,
+.container-text p {
+    padding-top: 40px;
+    font-size: 1.25em;
+    line-height: 1.75em;
+    color: rgb(255, 255, 255);
+}
+
+.mail,
+.left,
+.information,
+.container-text h2 {
+    padding-top: 100px;
+    font-size: 2em;
+    line-height: 1.5em;
+    color: rgb(255, 255, 255);
+    font-weight: 300;
+}
+
+.mail,
+.left,
+.information,
+.container-text h3 {
+    padding-top: 40px;
+    font-size: 1.5em;
+    line-height: 1.5em;
+    color: rgb(255, 255, 255);
+    font-weight: 300;
+}
+
+.mail,
+.left,
+.container-text p,
+h2,
+h3 {
+    padding-left: 40px;
+    padding-right: 40px;
+    text-align: justify;
+}
+
+.button,
+button {
+    color: white;
+    font-size: 1.25em;
+    border: 2px solid white;
+    background-color: rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    border-radius: 10px;
+    margin-left: 40px;
+    margin-top: 50px;
+}
+
+.container-left {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+}
+
+.left {
+    opacity: 0;
+    border: none;
+}
+.photo-right:hover .left{
+    transition: 0.5s;
+    opacity: 1;
+}
+
+.left h2 {
+    padding-top: 70px;
+    padding-bottom: 30px;
+    font-size: 2em;
+}
+
+.left h3 {
+    padding-bottom: 40px;
+    font-size: 1.2em;
+}
+
+.left p {
+    padding-left: 40px;
+}
+
+.photo-right {
+    width: 100%;
+    height: 100vh;
+    background-image: url(right.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.information {
+    padding-bottom: 150px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: rgba(35, 40, 51, 1);
+}
+
+.information h2 {
+    font-size: 1.6em;
+    padding-bottom: 60px;
+    padding-top: 50px;
+}
+
+.information h3 {
+    font-size: 1.75em;
+}
+
+.ipsum {
+    margin: 20px;
+    padding-top: 80px;
+    margin: 0 auto;
+    width: 90%;
+    flex-wrap: wrap;
+    display: flex;
+    align-content: space-between;
+}
+
+.ipsum div {
+    margin: 20px;
+    text-align: justify;
+    width: 30%;
+}
+
+.ipsum div img {
+    padding-left: 25%;
+}
+
+.ipsum div img {
+    width: 30%;
+}
+
+.ipsum div h3 {
+    font-size: 1.2em
+}
+
+.ipsum div p {
+    font-size: 0.8em
+}
+
+.information button {
+    margin-right: 100px;
+}
+
+button:hover {
+    cursor: pointer;
+    transition: 0.5s;
+    color: rgba(240, 58, 94, 1);
+    border-color: rgba(240, 58, 94, 1);
+}
+
+.mail {
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    background-color: rgba(240, 58, 94, 1);
+    padding-bottom: 100px;
+}
+
+.adress {
+    color: rgb(255, 255, 255);
+    color: white;
+    background-color: rgba(240, 58, 94, 1);
+    border-radius: 7px;
+    padding: 8px 0px 6px 6px;
+    border: 1ps solid white;
+    width: 50%;
+    height: 20%;
+    font-size: 0.8em;
+    font-weight: 100;
+}
+
+.button {
+    color: rgba(240, 58, 94, 1);
+    background-color: white;
+    width: 40%;
+    padding: 9px;
+    font-size: 0.8em;
+    font-weight: 100;
+    cursor: pointer;
+}
+
+.mail h3 {
+    padding-bottom: 40px;
+    font-size: 1.5em;
+    padding-left: 100px;
+}
+.form{
+    opacity: 0.2;
+}
+.mail:hover .form{
+    opacity: 1;
+    transition: 0.5s;
+}
+.button:hover{
+    background-color: rgba(240, 58, 94, 1);
+    color: white;
+    transition: 0.5s;
+}
+
+footer {
+    padding-bottom: 5%;
+    flex-direction: column;
+    display: flex;
+    align-items: center;
+    width: 100%;
+    background-color: rgba(35, 40, 51, 1);
+}
+
+.site {
+    padding-top: 50px;
+    display: flex;
+    justify-content: center;
+}
+
+footer a {
+    margin: 10px;
+}
+
+span {
+    color: dimgray;
+    padding: 10px;
+    border-right: 1px solid white;
+}
+
+span:last-child {
+    border: none;
+}
+footer a:hover{
+   color: rgba(240, 58, 94, 1);
+    transition: 0.5s;
+    opacity: 1;
+}
